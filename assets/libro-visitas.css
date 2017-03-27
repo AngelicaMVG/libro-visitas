@@ -1,0 +1,15 @@
+body{
+  background-color: ;
+}
+#textarea{
+  font-size: 15px;
+  font-family:monospace;
+}
+#vincular{
+  font-size: 20px;
+  font-family: monospace;
+}
+h1{
+  font-family: Lobster;
+  color: rgb(125, 73, 144);
+}

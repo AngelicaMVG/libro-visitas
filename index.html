@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Libro de visitas</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/libro-visitas.css" type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <h1> Articulos </h1>
+  <div>
+    <label><h4> Crear Articulo </h4></label>
+    <button class="btn" id="textL"value="textoGrande" onclick="sizeText(1)"><i class="fa fa-text-height"> Grande</i></button>
+    <button class="btn" id="textM" value="Texto Mediano" onclick="sizeText(2)"><i class="fa fa-text-height"></i> Mediano</button>
+    <button class="btn" id="textS" value="Texto Chico" onclick="sizeText(3)"><i class="fa fa-text-height"></i> Chico</button>
+    <button class="btn" id="textColor" value="Color de Texto" onclick="textoColor()">Color de Texto <i class="fa fa-paint-brush"></i></button>
+    <button class="btn" id="background" value="Color de Fondo" onclick="fondoColor()">Color de Fondo <i class="fa fa-eyedropper"></i></button>
+    <button class="btn" id="izq" value="Alinear a la izquierda" onclick="alinear(1)">Alinear izquierda <i class="fa fa-align-left"></i></button>
+    <button class="btn" id="center" value="Centrar" onclick="alinear(2)">Centrar <i class="fa fa-align-center"></i></button>
+    <button class="btn" id="der" value="Alinear a la derecha" onclick="alinear(3)">Alinear derecha <i class="fa fa-align-right"></i></button>
+    <div>
+      <textarea cols='100' rows='10' id='textarea' placeholder="Comentario" onkeyup="escribir()"></textarea>
+    </div>
+  </div><hr>
+  <div id='comentario'>
+    <label> <h3> Contenido </h3></label>
+    <p id='vincular'></p>
+    <button class="btn" value="Enviar">Enviar <i class='fa fa-paper-plane-o'></i></button>
+  </div>
+<script src='assets/js/libro.visitas.js'></script>
+</body>
+</html>
